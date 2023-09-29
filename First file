@@ -6,13 +6,14 @@ void main()
   char o;
 float a,b,c;
 clrscr();
+printf("Enter the first letter of desired operation in upper case like A , S , M , D\n");
+scanf("%c",&o);
 printf("Enter the first number\n");
 scanf("%f",&a);
 printf("Enter the second number\n");
 scanf("%f",&b);
-printf("Enter the first letter of desired operation in upper case like A , S , M , D\n");
-scanf("%c",&o);
 switch(o)
+{
 case 'A' : 
 c=a+b;
 printf("Sum of %f and %f is : %f",a,b,c);
@@ -31,6 +32,6 @@ printf("Division of %f and %f is : %f",a,b,c);
 break;
 default :
 printf("Wrong entry ");
+}
 getch();
-
 }
