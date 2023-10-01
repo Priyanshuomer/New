@@ -1,0 +1,45 @@
+#include<iostream>
+#include<conio.h>
+int main()
+{
+   int fact(int,int,int);
+   int co(int);
+    int n,i,j,k,facto,z,p;
+    clrscr();
+    cout<<"Enter the number of lines : "<<endl;
+    cin>>n;
+    cout<<" Pascal Triangle is : "<<endl;
+    for(i=0;i<n;i++)
+    {
+     for(j=0;j<=(n-i-1);j++)
+      {
+       cout<<" ";
+       }
+      for(k=0;k<=i;k++)
+      {
+      z=i-k;
+      facto=fact(i,k,z);
+      cout<<facto<<" ";
+      }
+      cout<<endl;
+      }
+      return 0;
+      }
+     int co(int a)
+    {int t=1;
+     for (int c=a;c>=1;c--)
+     {
+      t=t*c;
+      }
+      return t;
+      }
+      int fact(int i, int k,int z)
+      {
+       int p;
+       int fi=co(i);
+       int fk=co(k);
+       int fz=co(z);
+       p=fi/(fk*fz);
+       return p;
+       }
+    
