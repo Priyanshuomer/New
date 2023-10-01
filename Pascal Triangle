@@ -1,3 +1,4 @@
+/*** A simple program in 'C++' language to print the Pascal Triangle by giving the number of lines ***/
 #include<iostream>
 #include<conio.h>
 int main()
