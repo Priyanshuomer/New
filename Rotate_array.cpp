@@ -14,11 +14,11 @@ int main()
     }
     cin>>k;
     k%=n;
-    for(i=n-k,j=0;i<n;i++)
+    for(i=k,j=0;i<n;i++)
     {
     temp[j++]=a[i];
     }
-    for(i=0;i<n-k;i++)
+    for(i=0;i<k;i++)
     {
     temp[j++]=a[i];
     }
